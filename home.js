@@ -10,6 +10,11 @@ let citizen = document.querySelector('.fa-passport')
 let hist = document.querySelector('.fa-landmark')
 let chemistry = document.querySelector('.fa-flask')
 let typing = document.querySelector('.fa-keyboard')
+let icon = document.querySelector('.fa-bolt-lightning')
+let h1 = document.getElementById('sl-h1')
+let p = document.getElementById('sl-p')
+let buttn = document.getElementById('sl-but')
+
 
 mathematic.addEventListener("click", ()=>{
     window.location.href = 'math.html'
@@ -113,3 +118,19 @@ box6.addEventListener("mouseout", ()=>{
 box6.addEventListener('click',()=>{
     window.location.href = 'typing.html'
 })
+
+
+window.onload = function(){
+    h1.style.position = 'relative'
+    h1.style.left = '0px'
+    h1.style.transition = '0.55s'
+    p.style.position = 'relative'
+    p.style.left = '0px'
+    p.style.transition = '0.55s'
+    buttn.style.position = 'relative'
+    buttn.style.top = '0px'
+    buttn.style.transition = '0.55s'
+    icon.style.position = 'absolute'
+    icon.style.top = '100px'
+    icon.style.transition = '0.55s'
+}

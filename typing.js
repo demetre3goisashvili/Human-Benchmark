@@ -83,3 +83,18 @@ btn.addEventListener('click',()=>{
     }
 
 })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const icon = document.getElementById('side');
+    const menu = document.querySelector(".sidebar"); // Use querySelector for a single element
+
+    icon.addEventListener('click', () => {
+        // Check the current display style of the menu
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none'; // Hide the menu
+        } else {
+            menu.style.display = 'block'; // Show the menu
+        }
+    });
+});
