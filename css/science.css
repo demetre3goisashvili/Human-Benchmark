@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+:root {
+    --clr--: rgb(255, 209, 84);
+    --clr2--: rgb(51, 51, 51);
+}
+
+header {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    height: 55px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+}
+body {
+    background-color: #e6e8f4;
+    overflow-x: hidden;
+}
+
+.a-tag {
+    text-decoration: none;
+    color: black;
+    padding: 19px;
+    transition: 0.25s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.a-tag:hover {
+    background-color: rgb(208, 203, 203);
+    transition: 0.25s;
+}
+
+.sidebar{
+    display: none;
+}
+
+#side{
+    display: none;
+}
+.slogan {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(43, 135, 209);
+    height: 540px;
+    width: 100%;
+    margin-top: 2%;
+
+}
+
+
+#q-1-h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 25%;
+}
+
+.q-1-but{
+    position: relative;
+    left: 15%;
+    background-color: var(--clr--);
+    padding: 15px 35px;
+    border-radius: 3px;
+    border: none;
+    color: var(--clr2--);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 40%;
+    transition: 0.35s;
+    margin: 10px;
+}
+
+.q-1-but:hover{
+    background-color: white;
+}
+
+#q-1-next{
+    position: relative;
+    left: 380px;
+    background-color: var(--clr--);
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: none;
+    color: var(--clr2--);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 42%;
+    transition: 0.35s;
+    margin: 10px;
+}
+
+#q-1-next:hover{
+    background-color: white;
+}
+
+
+
+#q-2-h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 25%;
+    
+}
+
+.q-2-but{
+    position: relative;
+    left: 20%;
+    background-color: var(--clr--);
+    padding: 15px 35px;
+    border-radius: 3px;
+    border: none;
+    color: var(--clr2--);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 40%;
+    transition: 0.35s;
+    margin: 10px;
+}
+
+.q-2-but:hover{
+    background-color: white;
+}
+
+#q-2-next{
+    position: relative;
+    left: 42%;
+    background-color: var(--clr--);
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: none;
+    color: var(--clr2--);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 42%;
+    transition: 0.35s;
+    margin: 10px;
+}
+
+#q-2-next:hover{
+    background-color: white;
+}
+
+
+
+
+#q-3-h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 25%;
+}
+
+.q-3-but{
+    position: relative;
+    background-color: var(--clr--);
+    padding: 15px 35px;
+    border-radius: 3px;
+    border: none;
+    color: var(--clr2--);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 40%;
+    transition: 0.35s;
+    margin: 10px;
+}
+
+.q-3-but:hover{
+    background-color: white;
+}
+
+#q-3-next{
+    position: relative;
+    left: 30%;
+    background-color: var(--clr--);
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: none;
+    color: var(--clr2--);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 42%;
+    transition: 0.35s;
+    margin: 10px;
+}
+
+#q-3-next:hover{
+    background-color: white;
+}
+
+/* 1 */
+@media (max-width:800px){
+    .q-1-but{
+        padding: 10px 25px;
+        top: 35%;
+        left: 5%;
+    }
+    #q-1-next{
+        padding: 10px 25px;
+        top: 35%;
+        left: 200px;
+    }
+    #q-1-h1{
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width:441px){
+    .q-1-but{
+        padding: 10px 15px;
+        top: 32%;
+        left: 0%;
+        margin: 2px;
+    }
+    #q-1-h1{
+        font-size: 40px;
+    }
+    #q-1-next{
+        padding: 10px 25px;
+        top: 35%;
+        left: 0px;
+    }
+
+}
+
+@media (max-width:737px){
+    .q-1-but{
+        padding: 15px 20px;
+    }
+}
+
+/* 2 */
+@media (max-width:1275px){
+    .q-2-but{
+        padding: 15px 35px;
+        top: 30%;
+    }
+    #q-2-next{
+        top: 30%;
+        
+    }
+    #q-2-h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:800px){
+    .q-2-but{
+        padding: 10px 25px;
+        top: 35%;
+        left: 5%;
+    }
+    #q-2-next{
+        padding: 10px 25px;
+        top: 35%;
+        left: 200px;
+    }
+    #q-2-h1{
+        font-size: 40px;
+    }
+
+}
+
+
+
+@media (max-width:481px){
+    .q-2-but{
+        padding: 10px 10px;
+        top: 32%;
+        left: 10%;
+        margin: 2px;
+    }
+    #q-2-h1{
+        font-size: 30px;
+    }
+    #q-2-next{
+        padding: 10px 25px;
+        top: 35%;
+        left: 0px;
+    }
+
+}
+@media (max-width:441px){
+    .q-2-but{
+        padding: 10px 10px;
+        top: 32%;
+        left: 0%;
+        margin: 2px;
+    }
+    #q-2-h1{
+        font-size: 30px;
+    }
+    #q-2-next{
+        padding: 10px 25px;
+        top: 35%;
+        left: 0px;
+    }
+
+}
+
+/* 3 */
+
+@media (max-width:800px){
+    .q-3-but{
+        padding: 15px 35px;
+        top: 35%;
+        left: 5%;
+    }
+    #q-3-next{
+        padding: 10px 25px;
+        top: 35%;
+        left: 200px;
+    }
+    #q-3-h1{
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width:441px){
+    .q-3-but{
+        padding: 10px 10px;
+        top: 32%;
+        left: 0%;
+        margin: 2px;
+    }
+    #q-3-h1{
+        font-size: 30px;
+        width: 150px;
+    }
+    #q-3-next{
+        padding: 10px 25px;
+        top: 35%;
+        left: 0px;
+    }
+
+}
+
+@media (max-width: 409px) {
+    #signup{
+        display: none;
+    }
+    #signin{
+        display: none;
+    }
+    #side{
+        display: flex;
+    }
+   
+}
+
+
