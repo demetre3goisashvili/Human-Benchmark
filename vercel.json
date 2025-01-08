@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+      {"source": "/(.*)","destination": "home.html"},
+      {"source": "/(.*)","destination": "math.html"},
+      {"source": "/(.*)","destination": "history.html"},
+      {"source": "/(.*)","destination": "english.html"},
+      {"source": "/(.*)","destination": "science.html"},
+      {"source": "/(.*)","destination": "sign in.html"},
+      {"source": "/(.*)","destination": "sign up.html"},
+      {"source": "/(.*)","destination": "typing.html"},
+      {"source": "/(.*)","destination": "citizenship.html"}
+  ]
+}
