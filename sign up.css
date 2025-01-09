@@ -9,6 +9,13 @@ body{
     box-sizing: border-box;
     font-weight: 400;
 }
+
+#nav-user{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
 header{
     padding: 15px 0;
     display: flex;

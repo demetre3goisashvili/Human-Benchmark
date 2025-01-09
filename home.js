@@ -134,3 +134,19 @@ window.onload = function(){
     icon.style.top = '100px'
     icon.style.transition = '0.55s'
 }
+
+let signin = document.getElementById('signin');
+let signup = document.getElementById('signup');
+let nav = document.querySelector('#nav-2');
+
+let user = localStorage.getItem('name');
+
+
+if (user && user.trim() !== '') {
+    signin.style.display = 'none';
+    signup.style.display = 'none';
+    nav.innerHTML = `<p id="nav-user">${user}</p>`;
+} else {
+    signin.style.display = '';
+    signup.style.display = '';
+}
