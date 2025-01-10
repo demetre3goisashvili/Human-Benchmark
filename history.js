@@ -149,12 +149,36 @@ let nav = document.querySelector('#nav-2');
 
 let user = localStorage.getItem('name');
 
-
 if (user && user.trim() !== '') {
     signin.style.display = 'none';
     signup.style.display = 'none';
-    nav.innerHTML = `<p id="nav-user">${user}</p>`;
+    nav.innerHTML = `
+    <p id="nav-user">${user}</p>
+    <button id="nav-out" style="display: none;">Sign out</button>
+    `;
 } else {
     signin.style.display = '';
     signup.style.display = '';
+}
+
+let navUser = document.getElementById("nav-user");
+let signOutButton = document.getElementById("nav-out");
+
+if (navUser) {
+    navUser.addEventListener("click", () => {
+        if (signOutButton.style.display === "none") {
+            signOutButton.style.display = "block";
+            navUser.style.top = '-7px'
+        } else {
+            signOutButton.style.display = "none";
+            navUser.style.top = '1px'
+        }
+    });
+}
+
+if (signOutButton) {
+    signOutButton.addEventListener("click", () => {
+        localStorage.clear(); 
+        location.reload(); 
+    });
 }
